@@ -9,8 +9,8 @@ def send(From_Addr, To_Addr):
   key_file = open('./key.secret', 'r')
   key = json.loads(key_file.read())
 
-  msg = MIMEText('Hello World')
-  msg['Subject'] = 'Email example'
+  msg = MIMEText('Detect intrusion!!!')
+  msg['Subject'] = 'Detect intrusion!!!'
   msg['From'] = From_Addr
   msg['To'] = To_Addr
 

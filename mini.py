@@ -10,7 +10,7 @@ import time
 
 
 def sendNotification():
-  Notify.send('imjoshua9316dev@gmail.com', 'imjoshua9316@gmail.com')
+  Notify.send('imjoshua9316dev@gmail.com', 'imjoshua9316dev@gmail.com')
   print("success to send Notification")
   time.sleep(30)
   
@@ -68,7 +68,7 @@ def controlUltraSensor():
         detect_count = 0
         time_prev = time.time()
     elif(sts_mode == 0 and detect_count >= 5):
-      print("home mode(val: "+str(distance_now)+")")
+      print("home mode(val: "+str(distance_now)+", air quality: "+air_data['khai_grade']+")")
       #turn on led - air condition info
       if(air_data['khai_grade'] == '1'):
         controlLED(0,0,100, 4, 1)
@@ -87,6 +87,7 @@ def controlUltraSensor():
       sendNotification()
       detect_count = 0
       time_prev = time.time() 
+
 def controlButton():
   global sts_mode
   global sts_button
@@ -140,6 +141,7 @@ def controlLED(r, g, b, t, n):
     LED_R.start(0)
     LED_G.start(0)
     LED_B.start(0)
+    print("turn on LED ("+str(r)+", "+str(g)+", "+str(b)+", "+str(t)+", "+str(n)+")")
     if(n == 1):
         LED_R.ChangeDutyCycle(r)
         LED_G.ChangeDutyCycle(g)
@@ -158,6 +160,7 @@ def controlLED(r, g, b, t, n):
             LED_G.ChangeDutyCycle(0)
             LED_B.ChangeDutyCycle(0)
             time.sleep(t/2)
+    return
 
 if __name__ == '__main__': #start main procedure
   global sts_button
@@ -198,6 +201,7 @@ if __name__ == '__main__': #start main procedure
         print("통합대기환경수치 : "+str(air_data['khai_value']))
         print("통합대기환경등급 : "+str(air_data['khai_grade']))
         #print(threading.activeCount())
+        print(threading.enumerate())
         time.sleep(10)
 
   
