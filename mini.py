@@ -64,6 +64,7 @@ def controlUltraSensor():
         distance_prev = distance_now
     
     if(abs(time_now - time_prev) > 3.0):
+        print("reset detect time")
         detect_count = 0
         time_prev = time.time()
     elif(sts_mode == 0 and detect_count >= 5):
@@ -85,8 +86,7 @@ def controlUltraSensor():
       controlLED(90,0,0, 1, 10)
       sendNotification()
       detect_count = 0
-      time_prev = time.time()
-    
+      time_prev = time.time() 
 def controlButton():
   global sts_mode
   global sts_button
@@ -145,6 +145,9 @@ def controlLED(r, g, b, t, n):
         LED_G.ChangeDutyCycle(g)
         LED_B.ChangeDutyCycle(b)
         time.sleep(t)
+        LED_R.ChangeDutyCycle(0)
+        LED_G.ChangeDutyCycle(0)
+        LED_B.ChangeDutyCycle(0)
     else:
         for i in range(n):
             LED_R.ChangeDutyCycle(r)
