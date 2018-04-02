@@ -159,8 +159,6 @@ def controlLED(r, g, b, t, n):
             LED_B.ChangeDutyCycle(0)
             time.sleep(t/2)
 
-  
-
 if __name__ == '__main__': #start main procedure
   global sts_button
   global sts_ultra_sensor
@@ -195,14 +193,11 @@ if __name__ == '__main__': #start main procedure
   print("Button thread starting...")
   t_button.start()
   
-  count = 1
   try:
     while True:
-        print("main Thread Running...("+str(count)+")")
         print("통합대기환경수치 : "+str(air_data['khai_value']))
         print("통합대기환경등급 : "+str(air_data['khai_grade']))
         #print(threading.activeCount())
-        count += 1
         time.sleep(10)
 
   
