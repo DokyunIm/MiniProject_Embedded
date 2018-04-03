@@ -1,12 +1,12 @@
-## Providing air quality information and Detecting intrusions system using Raspberry Pi 
+## Displaying air quality information and Detecting intrusions system using Raspberry Pi 
 
 
 ### What
-  1. Providing air quality information based on location address using IP Address
+  1. Displaying air quality information based on location address using IP Address
   2. Detecting intrusions using Ultrasonic sensor and Sending Email to User
 ***
 ### How
-  - Providing air quality information
+  - Displaying air quality information
     1. Get IP Address of Raspberry Pi
     2. Find location address using WHOIS OpenAPI and Naver Maps API
     3. Inquire Air quality information using location address by Open API that provided government
