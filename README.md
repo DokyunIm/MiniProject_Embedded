@@ -17,7 +17,7 @@
         - If air quality is too bad, LED turn on Red
         
   - Detecting intrusions
-    1. If moving id detected using Ultrasonic sensor,
+    1. If moving is detected using Ultrasonic sensor,
     2. LED turn on Red and is blinking
     3. Send Email to user
     
