@@ -3,7 +3,7 @@
 
 ### What
   1. Providing air quality information based on location address using IP Address
-  2. Detecting intrusion using Ultrasonic sensor and Send Email to User
+  2. Detecting intrusion using Ultrasonic sensor and Sending Email to User
 ***
 ### How
   - Providing air quality information
