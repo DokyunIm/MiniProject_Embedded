@@ -1,4 +1,4 @@
-## Displaying air quality information and Detecting intrusions system using Raspberry Pi 
+## Displaying air quality info. and Detecting intrusions system using Raspberry Pi 
 
 
 ### What
