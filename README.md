@@ -9,7 +9,7 @@
   - Displaying air quality information
     1. Get IP Address of Raspberry Pi
     2. Find location address using WHOIS OpenAPI and Naver Maps API
-    3. Inquire Air quality information using location address by Open API that provided government
+    3. Inquire Air quality information using location address by Open API that provided by government
     4. If moving is detected using Ultrasonic sensor, LED turns on according to the air quality
         - If air quality is good, LED turn on Blue
         - If air quality is normal, LED turn on Green
@@ -43,7 +43,7 @@
     + Control Button
 ***
 ### Notice
-  -  If you want to test or run this code, you need key for using whois API, Naver Maps API, gmail smtp login and Open API provided government
+  -  If you want to test or run this code, you need key for using whois API, Naver Maps API, gmail smtp login and Open API provided by government
   -  <https://xn--c79as89aj0e29b77z.xn--3e0b707e/kor/whois/openAPI_KeyCre.jsp>
   -  <https://developers.naver.com/docs/common/openapiguide/>
   -  <https://www.data.go.kr/>
@@ -62,7 +62,7 @@
     client secret : Naver Maps API
     auth key : gmail smtp login
     whois key : whois api
-    openapi key : open api provided government
+    openapi key : open api provided by government
   </code></pre>
     
     
