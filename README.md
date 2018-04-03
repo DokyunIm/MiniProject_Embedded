@@ -1,9 +1,9 @@
-## Providing air quality information and Detecting intrusion system using Raspberry Pi 
+## Providing air quality information and Detecting intrusions system using Raspberry Pi 
 
 
 ### What
   1. Providing air quality information based on location address using IP Address
-  2. Detecting intrusion using Ultrasonic sensor and Sending Email to User
+  2. Detecting intrusions using Ultrasonic sensor and Sending Email to User
 ***
 ### How
   - Providing air quality information
@@ -16,12 +16,12 @@
         - If air quality is bad, LED turn on Yellow
         - If air quality is too bad, LED turn on Red
         
-  - Detect intrusion
+  - Detecting intrusions
     1. If moving id detected using Ultrasonic sensor,
     2. LED turn on Red and is blinking
     3. Send Email to user
     
-  - Change mode
+  - Changing mode
     + If press button during 2 sec, change the mode
     + Home mode is to provide air quality information
     + Detect mode is to detect intrusion and send Email to user
