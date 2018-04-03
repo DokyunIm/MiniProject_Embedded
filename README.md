@@ -10,14 +10,14 @@
     1. Get IP Address of Raspberry Pi
     2. Find location address using WHOIS OpenAPI and Naver Maps API
     3. Inquire Air quality information using location address by Open API that provided by government
-    4. When motion is detected using Ultrasonic sensor, LED turns on according to the air quality
+    4. If motion is detected using Ultrasonic sensor, LED turns on according to the air quality
         - If air quality is good, LED turn on Blue
         - If air quality is normal, LED turn on Green
         - If air quality is bad, LED turn on Yellow
         - If air quality is too bad, LED turn on Red
         
   - Detecting intrusions
-    1. When motion is detected using Ultrasonic sensor,
+    1. If motion is detected using Ultrasonic sensor,
     2. LED turn on Red and is blinking
     3. Send Email to user
     
